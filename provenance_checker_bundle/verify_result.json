@@ -1,0 +1,67 @@
+{
+  "verifier": "isms-p-feedback-verifier",
+  "docs_dir": "C:\\Users\\fsiedu\\Desktop\\project\\provenance_checker_bundle\\refs",
+  "feedback_file": "isms_analysis_20250822_155114.json",
+  "overall_verdict": "unsupported",
+  "overall_coverage": 0.0,
+  "tot_claims": 1,
+  "supported_claims": 0,
+  "sources": [],
+  "by_item": [
+    {
+      "control_id": null,
+      "claim_text": "주요정보통신기반시설_기술적_취약점_분석_평가_방법_상세가이드.pdf",
+      "verdict": "unsupported",
+      "coverage": 0.0,
+      "top_source": {
+        "doc_id": "주요정보통신기반시설_기술적_취약점_분석_평가_방법_상세가이드.pdf",
+        "chunk": "script>alert('업로드 금지 파일')</script>\") commUtil.deleteFile(SITE_UPLOAD_DIR+strUploadDir+\"/\", uploadFileSystemName1) return }} %>∎ JSP Step 1) 수용 가능한 파일의 확장자만 업로드 허용(P ositive 방식) • 이미지 파일의 경우 ( JPG, GIF, BMP 등) • 문서 파일의 경우 (XLS, PDF, PPT, DOC 등) (예) doc, hwp, pdf, jpg 파일만 업로드 허용 (※ 예로 제시하는 것으로, 구현 시 다를 수 있음). 확장자 검증 시 대소문자 구분 없이 문자열 비 교 Step 2) MIME TYPE 확인을 통한 실행 파일 업로드 차단 (예) MIME TYPE을 통한 악성 파일 업",
+        "similarity": 0.2026
+      },
+      "analysis": [
+        {
+          "claim": "주요정보통신기반시설_기술적_취약점_분석_평가_방법_상세가이드.pdf",
+          "topk": [
+            {
+              "doc_id": "주요정보통신기반시설_기술적_취약점_분석_평가_방법_상세가이드.pdf",
+              "chunk": "script>alert('업로드 금지 파일')</script>\") commUtil.deleteFile(SITE_UPLOAD_DIR+strUploadDir+\"/\", uploadFileSystemName1) return }} %>∎ JSP Step 1) 수용 가능한 파일의 확장자만 업로드 허용(P ositive 방식) • 이미지 파일의 경우 ( JPG, GIF, BMP 등) • 문서 파일의 경우 (XLS, PDF, PPT, DOC 등) (예) doc, hwp, pdf, jpg 파일만 업로드 허용 (※ 예로 제시하는 것으로, 구현 시 다를 수 있음). 확장자 검증 시 대소문자 구분 없이 문자열 비 교 Step 2) MIME TYPE 확인을 통한 실행 파일 업로드 차단 (예) MIME TYPE을 통한 악성 파일 업",
+              "similarity": 0.2026
+            },
+            {
+              "doc_id": "주요정보통신기반시설_기술적_취약점_분석_평가_방법_상세가이드.pdf",
+              "chunk": "ernStr ReturnValue = .test(FileNameExt) End with Set eregObj = Nothing IsAllowExtention = ReturnValue End Function ..... If Not IsAllowExtention(“파일명.txt”, “doc,hwp,pdf,jpg”) Then response.write “허용되지 않은 확장자 입 니다.” End if if UploadForm(\"UPFILE\").MineType<> \"image\" then Response.write \"Permit only Image files\" Response.end end if* 업로드 파일을 위한 전용 디렉터리를 별도로 생성하여 웹 서버 데 몬 설정 파일(httpd.conf 등)에서 실행 설정을 제",
+              "similarity": 0.201
+            },
+            {
+              "doc_id": "주요정보통신기반시설_기술적_취약점_분석_평가_방법_상세가이드.pdf",
+              "chunk": "x\",\".txt\" } if(!allowedExtensions.Contains(c hosenFileExtension)) { returnMessage=\"FileUploadFailed\" returnreturnMessage }string[] allowedMimeTypes = { \"text/plain\", \"text/xml\" } stringchosenFileMiMeType=objFile.PostedFile.C ontentType if(!allowedMimeTypes.Contains(chosenFileMiMeType))• 문서 파일의 경우 (XLS, PDF, PPT, DOC 등) (예) doc, hwp, pdf, jpg 파일만 업로드 허용 (※ 예로 제시하는 것으로, 구현 시 다를 수 있음) 확장자 검증 시 대소문자 구",
+              "similarity": 0.1946
+            }
+          ],
+          "best_similarity": 0.2026,
+          "supported": false
+        }
+      ]
+    }
+  ],
+  "domain_gate": {
+    "whitelist": [
+      "intra.bank",
+      "regulator.go.kr",
+      "*.gov.kr"
+    ],
+    "urls_found": [],
+    "allowed": [],
+    "blocked": [],
+    "allowed_count": 0,
+    "blocked_count": 0
+  },
+  "env": {
+    "model": "o4-mini",
+    "whitelist_domains": [
+      "intra.bank",
+      "regulator.go.kr",
+      "*.gov.kr"
+    ]
+  }
+}
