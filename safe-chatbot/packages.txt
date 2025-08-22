@@ -1,0 +1,3 @@
+# Streamlit 배포에 필요한 시스템 패키지
+# PDF 처리를 위한 패키지들
+poppler-utils
